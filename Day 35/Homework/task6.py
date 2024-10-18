@@ -1,0 +1,5 @@
+#6. შექმენით ფუნქცია, რომელიც იღებს string'ს და აბრუნებს იმავე string'ს uppercase'ში. (მაგალითად: input: "Hello World". output: "HELLO WORLD".)
+def to_uppercase(s):
+    return s.upper()
+result = to_uppercase("Hello World")
+print(result)
