@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-title {
+    font-size: 3em;  
+    font-weight: bold;
+}
+
+nav {
+    background-color: #444;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.main-image {
+    width: 300px;  
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.goals-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+ul.styled-list {
+    list-style-type: upper-roman; 
+    padding-left: 30px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+ul.styled-list li {
+    color: #0077cc;
+    font-size: 1.1em;
+}
