@@ -1,0 +1,38 @@
+<!-- გახადეთ 5 ბლოკ ლეველ ელემენტი ინლაინ ელემენტად და 5 ინლაინ ელემენტი ბლოკ ლეველ ელემენტად-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        .block-to-inline {
+            display: inline;
+            margin: 5px;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .inline-to-block {
+            display: block;
+            margin: 5px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>block</h2>
+    <div class="block-to-inline">Div 1</div>
+    <div class="block-to-inline">Div 2</div>
+    <p class="block-to-inline">Paragraph 1</p>
+    <p class="block-to-inline">Paragraph 2</p>
+    <h1 class="block-to-inline">Header 1</h1>
+
+    <h2>inlineee</h2>
+    <span class="inline-to-block">Span 1</span>
+    <span class="inline-to-block">Span 2</span>
+    <a href="#" class="inline-to-block">Link 1</a>
+    <a href="#" class="inline-to-block">Link 2</a>
+    <strong class="inline-to-block">Strong 1</strong>
+</body>
+</html>

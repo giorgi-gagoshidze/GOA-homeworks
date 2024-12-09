@@ -1,0 +1,12 @@
+.container {
+    height: 1000px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc; 
+}
