@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 2000px; 
+            background-color: #f4f4f4;
+        }
+
+        .content {
+            text-align: center;
+            padding: 100px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .fixed-image {
+            position: fixed;
+            top: 20px; 
+            left: 20px; 
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://via.placeholder.com/800" alt="Fixed Image" class="fixed-image">
+    <div class="content">
+        <p>Scroll down the page, the image stays fixed in the top-left corner.</p>
+    </div>
+</body>
+</html>

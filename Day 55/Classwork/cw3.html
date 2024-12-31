@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            margin: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .position-relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .position-absolute {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .position-fixed {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        .position-sticky {
+            position: sticky;
+            top: 0;
+            background-color: #e74c3c;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Margin vs Position Comparison</h1>
+    <div class="container">
+        <div class="box">
+            Margin
+        </div>
+        <div class="box position-relative">
+            Position: Relative
+        </div>
+        <div class="box position-absolute">
+            Position: Absolute
+        </div>
+    </div>
+    <div class="box position-fixed">
+        Position: Fixed (will stay in place while scrolling)
+    </div>
+    <div class="box position-sticky">
+        Position: Sticky (will stick to the top when scrolling)
+    </div>
+</body>
+</html>
