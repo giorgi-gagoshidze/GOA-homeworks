@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+    background-color:rgb(219, 195, 168);
+    font-family: "Outfit";
+}
+img{
+    padding-top: 40px;
+    width: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+}
+h6{
+    display: inline;
+    color: white;
+}
+.k h2{
+    color: rgb(146, 63, 91);
+    display: inline;
+}
+li{
+    color: rgb(77, 51, 61) ;
+    
+}
+.k{
+    padding-left: 40px;
+    padding-top: 25px;
+    border: 1px solid rgba(235, 153, 153, 0.100);
+    background-color: rgba(235, 153, 153, 0.100);
+    border-radius: 10px;
+    
+}
+.box{
+    border: 1px solid black;
+    border-radius: 20px;
+    border-color: white;
+    background-color: white;
+}
+.um h1,p{
+    padding-left: 35px;
+}
+.h {
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.h h1{
+    color: rgb(97, 57, 4);
+}
+.o {
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.o h1{
+    color: rgb(97, 57, 4);
+}
+.o b,p,h3{
+    display: inline;
+}
+.o p{
+    color: gray;
+}
+.o h3{
+    color:  rgb(97, 57, 4);
+    gap: 100px;
+}
+.i h2{
+    display: inline;
+}
+.i h1{
+    color:  rgb(97, 57, 4);
+    padding-left: 30px;
+}
+.i h3{
+    padding-left: 50px;
+    color: rgb(59, 57, 57);
+}
+.i h4{
+    display: inline;
+    color: rgb(97, 57, 4);
+}
+.i p{
+    color: rgb(59, 57, 57);
+}
+.i {
+    padding-bottom: 50px;
+}

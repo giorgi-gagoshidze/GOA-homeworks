@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.box {
+    width: 150px;
+    height: 200px;
+    background-color: #4CAF50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box:active {
+    position: relative;
+    left: 50px;
+    transform: rotate(25deg) scale(4);
+    background-color: #FF5722;
+}

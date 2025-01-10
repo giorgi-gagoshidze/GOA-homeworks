@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.box {
+    width: 150px;
+    height: 200px;
+    background-color: #4CAF50;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.move-left:active {
+    position: relative;
+    left: -50px;
+    background-color: #FF5722;
+}
+
+.scale:active {
+    background-color: #3F51B5;
+    width: 225px;
+    height: 300px;
+}
+
+.scale:active:nth-of-type(2) {
+    width: 75px;
+    height: 100px;
+}
+
+.move-diagonal:active {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    background-color: #009688;
+}
+
+.rotate:active {
+    background-color: #FFEB3B;
+    transform: rotate(-90deg);
+}
