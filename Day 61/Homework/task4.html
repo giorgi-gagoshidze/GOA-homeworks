@@ -1,0 +1,62 @@
+<!-- შექმენით ტექსტი, შემდეგ კი ანიმაციის მეშვეობით შეუცვალეთ ფერი, გამოიყენეთ @keyframes.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h{
+            animation-name: LILA;
+            animation: LILA 1s linear infinite;
+            transform: none;
+        }
+        p{
+            text-align: center;
+            padding-top: 200px;
+        }
+        @keyframes LILA{
+            1%{
+                color: blue;
+            }
+            10%{
+                color: aliceblue;
+            }
+            20%{
+                color: aqua;
+            }
+            30%{
+                color: black;
+            }
+            40%{
+                color: brown;
+            }
+            50%{
+                color: yellow;
+            }
+            60%{
+                color: green;
+            }
+            70%{
+                color: gray;
+            }
+            80%{
+                color: violet;
+            }
+            90%{
+                color: red;
+            }
+            100%{
+                color: khaki;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="h">
+        <p>
+            THIS TEXT CHANGES COLORS 🤩
+        </p>
+    </div>
+</body>
+</html>

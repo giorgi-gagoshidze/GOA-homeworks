@@ -1,0 +1,46 @@
+<!--შექმენით ანიმაცია, სადაც 200x200 div გაიზრდება ზომაში, შემდეგ კი თავის საწყის ზომაზე 2-ჯერ დაპატარავდება.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            margin: 0;
+            padding-top: 200px;
+        }
+        .pipi{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            animation: HULA 3s  infinite;
+        }
+        p{
+            text-align: center;
+            padding-top: 70px;
+        }
+        @keyframes HULA{
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pipi">
+        <p>
+            HULALA
+        </p>
+    </div>
+</body>
+</html>

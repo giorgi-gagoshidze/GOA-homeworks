@@ -1,0 +1,38 @@
+<!--2. შექმენით მრგვალი, ლურჯი დივი, ანიმაციის მეშვეობით კი მისი მოძრაობა ბურთის ხტუნავს მიამსგავსეთ, გამოიყენეთ @keyframe-ები.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .burti{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation-name: ANI;
+            border: 2px solid red;
+            border-radius: 100px;
+            animation: ANI 5s infinite;
+        }
+        
+        @keyframes ANI{
+            0%   {top: 0px;}
+            50% {top: 520px;}
+            100%{top: 0px;}
+        }  
+        .burti p{
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="burti">
+        <p>
+            Ball
+        </p>
+    </div>
+</body>
+</html>

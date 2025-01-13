@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h{
+            animation-name: LILA;
+            animation: LILA 2s linear infinite;
+            transform: none;
+            
+        }
+        body{
+            animation-name: LILA;
+            animation: LILA 2s linear infinite;
+            transform: none;
+        }
+        p{
+            text-align: center;
+            padding-top: 200px;
+        }
+        .clickable-text {
+            font-size: 24px;
+            color: blue;
+            cursor: pointer;
+            animation-name: LILA;
+            animation: LILA 2s linear infinite;
+            transform: none;
+        }
+        @keyframes LILA{
+            1%{
+                color: blue; background-color: aqua ;
+            }
+            10%{
+                color: aliceblue; background-color: blue;
+            }
+            20%{
+                color: aqua; background-color: aliceblue;
+            }
+            30%{
+                color: black; background-color:brown;
+            }
+            40%{
+                color: brown; background-color:black;
+            }
+            50%{
+                color: yellow; background-color:green;
+            }
+            60%{
+                color: green; background-color:yellow;
+            }
+            70%{
+                color: gray; background-color:violet;
+            }
+            80%{
+                color: violet; background-color:gray;
+            }
+            90%{
+                color: red; background-color:khaki;
+            }
+            100%{
+                color: khaki; background-color:red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="h">
+        <p>
+            DISCO PARTY
+        </p><br><br>
+        <p class="clickable-text" id="text">.</p>
+
+    </div>
+    <script>
+        /*internetshi movdzebne:))*/
+        const messages = [
+            "YOU FOUND MEEE",
+            "good job 👏🏻👏🏻",
+            "WELl i know ur eyes hurt <3",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+            "Tip: click ✖ to close the window",
+        ];
+        let counter = 0;
+        document.getElementById("text").addEventListener("click", function() {
+            this.textContent = messages[counter];
+            counter = (counter + 1) % messages.length;
+        });
+    </script>
+</body>
+</html>

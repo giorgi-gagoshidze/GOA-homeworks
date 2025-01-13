@@ -1,0 +1,43 @@
+<!--3. შექმენით მარტივი ანიმაცია, რომელიც 200x200 div-ს 360 გრადუსით გადმოატრიალებს, გამოიყენეთ @keyframes და rotate().-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-left: 600px;
+            padding-right: 500px;
+            padding-top: 200px;
+        }
+        .blok{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: none;
+            animation-name: LOLA;
+            animation: LOLA 2s linear infinite;
+        }
+        .blok p{
+            text-align: center;
+            padding-top: 40px;
+        }
+        @keyframes LOLA{
+            from{
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blok">
+        <p>
+            block
+        </p>
+    </div>
+</body>
+</html>
