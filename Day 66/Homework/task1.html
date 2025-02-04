@@ -49,8 +49,14 @@
             box-shadow: 0 0 50px rgba(255, 255, 0, 0.8);
         }
         @keyframes orbit {
-            from { transform: rotate(0deg) translateX(var(--distance)) rotate(0deg); }
-            to { transform: rotate(360deg) translateX(var(--distance)) rotate(-360deg); }
+            from { 
+                transform: rotate(0deg) 
+                translateX(var(--distance)) rotate(0deg);
+             }
+            to { 
+                transform: rotate(360deg) 
+                translateX(var(--distance)) rotate(-360deg); 
+            }
         }
         .orbit-container {
             position: absolute;
