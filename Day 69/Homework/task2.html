@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Designer Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #d4d4d4;
+    }
+    header {
+      border-bottom: 2px solid #333;
+      padding: 15px 20px;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .nav-links li {
+      position: relative;
+    }
+    .nav-links li:after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 40px;
+      background: #333;
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #d4d4d4;
+      font-size: 16px;
+      padding: 5px 10px;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    .hero {
+      padding: 40px;
+      position: relative;
+    }
+    .line {
+      border: none;
+      border-top: 2px solid #333;
+      margin: 20px 0;
+      width: 100%;
+    }
+    .hero-content {
+      margin-left: 50px;
+      text-align: left;
+    }
+    .hero h1 {
+      font-size: 80px;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cases</a></li>
+        <li><a href="#">Photo IG</a></li>
+        <li><a href="#">Design IG</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="hero">
+    <hr class="line">
+    <div class="hero-content">
+      <h1>
+        2024<br>
+        Work hub of<br>
+        Arthur Petrillo<br>
+        Designer<br>
+        Ω Enjoy
+      </h1>
+    </div>
+    <hr class="line">
+  </main>
+</body>
+</html>
