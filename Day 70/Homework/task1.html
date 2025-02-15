@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background: black;
+            height: 1080px;
+            display: flex;
+            align-items: flex-start;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .maindiv {
+            width: 1920px;
+            height: 1080px;
+            background: url('image.png') center/cover no-repeat;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            position: absolute;
+        }
+        .h1 {
+            text-align: center;
+            font-size: 100px;
+            font-weight: bold;
+            letter-spacing: 20px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .nav {
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin-top: 10px;
+            float: right;
+        }
+        .nav a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            font-size: 18px;
+            animation-name: hov;
+            animation-duration: 10s;
+            color: black;
+        }
+        @keyframes hov{
+            0%{
+                font-size: 18px;
+            }
+            50%{
+                font-size: 20px;
+            }
+            100%{
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv"></div>
+    <div>
+        <div class="h1">INFINITE MACHINE</div>
+        <div class="nav"><a href="#">Model P1 | About | Press | Contact | Careers</a></div>
+    </div>
+</body>
+</html>
