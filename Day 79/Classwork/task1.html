@@ -1,21 +1,20 @@
-<!--1. შექმენით ფორმა ერთი ტექსტის ინფუთით და ერთი ღილაკით, შემდეგ ფუნქციის მეშვეობით ღილაკზე დაჭერისას კონსოლში გამოიტანოს ინფუთში შეტანილი ინფორმაცია.-->
+<!--შექმენით საიტი სადაც გამოყენებთ prompt()-ს, alert()-ს, confirm()-ს, შედარების ოპერატორებს, ასევე confirm()-ში მომხმარებლის არევანი შეინახეთ ცვლადში და გამოიტანეთ კონსოლში.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form >
-        <input id="text" placeholder="input YOUR NAME OR I WILL PUT YOU IN CASSANDRAS HOUSE">
-        <button onclick="hmm()">submit to console</button>
-    </form>
+    <title>document</title>
     <script>
-        function hmm(){
-            let hello = document.getElementById('text').value
-            console.log(hello)
+        function inpoutuser() {
+            let userName = prompt("please input you name:");
+            alert("yello " + userName + "!!");
+            let sure = confirm("want to continiue?");
+            console.log("your answer " + sure);
         }
     </script>
+</head>
+<body>
+    <button onclick="inpoutuser()">start</button>
 </body>
 </html>

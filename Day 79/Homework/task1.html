@@ -1,23 +1,60 @@
-<!--მომხმარებელს სთხოვეთ შემოიტანოს სახელი prompt() ფუნქციით და შემდეგ გამოიტანეთ ის alert() ფუნქციით.  
-
-მაგალითად:
-თუ მომხმარებელი შეიყვანს "სანდრო"-ს, პროგრამამ უნდა აჩვენოს:   
-👉 "გამარჯობა, სანდრო!" 
-
-მინიშნება: გამოიყენეთ prompt() მონაცემის მისაღებად და alert() მის გამოსატანად.  -->
-
+<!--შექმენით საიტი:
+* სადაც გამოიყენებთ ყველა ნასწავლ ინფორმაციის ტიპს, შეინახეთ ისინი ცვლადებში, შემდეგ კი იმუშავეთ მათზე, შეკრიბეთ ა.შ,
+* საიტზე ასევე გამოიყენეთ ყველა შედარების ოპერატორი და ორი რიცხვის შედარების შედეგები გამოიტანეთ კონსოლში,
+* საბოლოოდ, დაამატეთ confirm() და მომხმარებელს კითხეთ სურს თუ არა საიტის დატოვება, თუ პასუხი დადებითი იქნება კონსოლში გამოუტანეთ 'you will live the site soon', თუ პასუხი  უარყოფითი იქნება კონსოლში გამოუტანეთ 'you are staying on the site'.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 40px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #48ff00;
+        }
+    </style>
 </head>
 <body>
-    <SCript>
-    let name = prompt('ENTER UR NAME');
-    alert("Hello " + name + "!" );
+    <button onclick="operatun()">IF YOU CLICK THIS U NEED TO GO TO CONSOLE AND THEN YOU WILL SEE A MATCHEMATIK OPORATIONS</button><br><br>
+    <button onclick="gasvla()" style="margin-left: 250px;">exit site?</button>
 
-    </SCript>
+    <script>
+        let num1 = 10;
+        let num2 = 5;
+        function operatun() {
+            console.log("First lets see what number 1 value and whats number 2 value:")
+            console.log("num1 is :" + num1);
+            console.log("num2 is: " + num2);
+            console.log("num1 == num2? " + (num1 == num2));  
+            console.log("num1 > num2? " + (num1 > num2));  
+            console.log("num1 <= num2? " + (num1 <= num2)); 
+            console.log("num1 < num2? " + (num1 < num2));  
+            console.log("num1 >= num2? " + (num1 >= num2)); 
+            console.log("num1 === num2? " + (num1 === num2));
+            console.log("num1 != num2? " + (num1 != num2)); 
+            console.log("num1 !== num2? " + (num1 !== num2));
+        }
+        function gasvla() {
+            let answer = confirm("WANT TO LEAVE THE SITE 🤨?");
+            if (answer) {
+                console.log("everything saved bye 👋🏻 😢 you can close the window now ↗ click that 😢");
+            } 
+            else {
+                console.log("YAY YOU ARE NOT GOING ANYWEREEEEEEEEE");
+            }
+        }
+    </script>
 </body>
 </html>

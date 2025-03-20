@@ -1,68 +1,23 @@
-<!--შექმენით საიტი სამი ღილაკითა და სურათით.
-* პირველი ღილაკი ცვლის გვერდის ფონს სასურველ ფერზე.
-* მეორე ღილაკი ცვლის ყველა ღილაკის ტექსტს სასურველ ფერზე.
-* მესამე ღილაკი აღადგენს ფონის და ღილაკების ტექსტის ფერს თავდაპირველ მნიშვნელობებზე.
-* სურათზე დაჭერისას, ის იცვლება სხვა სურათით.-->
+<!--მომხმარებელს სთხოვეთ შემოიტანოს სახელი prompt() ფუნქციით და შემდეგ გამოიტანეთ ის alert() ფუნქციით.  
+
+მაგალითად:
+თუ მომხმარებელი შეიყვანს "სანდრო"-ს, პროგრამამ უნდა აჩვენოს:   
+👉 "გამარჯობა, სანდრო!" 
+
+მინიშნება: გამოიყენეთ prompt() მონაცემის მისაღებად და alert() მის გამოსატანად.  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .hi{
-            padding-left: 250px;
-            display: block;
-        }
-        #hh{
-            padding-top: 70px;
-        }
-    </style>
 </head>
-<body id="background">
-    <div id="hh">
-    <img src="happi.png" width="100px" class="hi" onclick="change()" id="om">
-    <button onclick="color()" style="font-size: 10px; margin-left: 150px;" id="foto">Change the background color</button>
-    <button onclick="textcolor()" id="fot" style="font-size: 10px;">change text colors</button>
-    <button onclick="reset()" id="fo" style="font-size: 10px;">Reset</button>
-    </div>
-    <script>
-        function color(){
-                let background = document.getElementById("background")
-                background.style.backgroundColor = "green"
-        }
-        function textcolor(){
-                let colo = document.getElementById('foto')
-                colo.style.color = "yellow"
-                colo.style.backgroundColor = "black"
-                let col = document.getElementById('fot')
-                col.style.color = "yellow"
-                col.style.backgroundColor = "black"
-                let co = document.getElementById('fo')
-                co.style.color = "yellow"
-                co.style.backgroundColor = "black"
-        }
-        function reset(){
-                let res = document.getElementById('foto')
-                res.style.color = "black"
-                res.style.backgroundColor = "#efefef"
-                res.style.borderColor = '#767676'
-                res.style.borderRadius = '2px'
-                let re = document.getElementById('fot')
-                re.style.color = "black"
-                re.style.backgroundColor = "#efefef"
-                let r = document.getElementById('fo')
-                r.style.color = "black"
-                r.style.backgroundColor = "#efefef"
-                let back = document.getElementById('background')
-                back.style.backgroundColor = "white"
-                let hehe = document.getElementById('om')
-                hehe.src = 'happi.png'
-        }
-        function change(){
-            let hehe = document.getElementById('om')
-            hehe.src = 'angri.png'
-        }
-    </script>
+<body>
+    <SCript>
+    let name = prompt('ENTER UR NAME');
+    alert("Hello " + name + "!" );
+
+    </SCript>
 </body>
 </html>
