@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <input type="checkbox" id="MEME">
+        <input type="checkbox" id="HAAAA">
+    </form>
+    <h1 id="OPAGANA">RESULT:</h1>
+    <button onclick="HH()">check</button>
+
+</body>
+</html>
+<script>
+    function HH(){
+        let PIPI = document.getElementById("MEME").checked
+        let PI = document.getElementById("HAAAA").checked
+        let HU = document.getElementById("OPAGANA")
+        let result = PIPI && PI
+        HU.textContent += result
+    }
+</script>
